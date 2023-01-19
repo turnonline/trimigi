@@ -15,7 +15,7 @@ Trimigi documentation, architecture and API centralised repository
 | [trimigi-schedule](#component-trimigi-schedule)                     | service     | GCloud SaaS                    | Turnonline  | &#10060;         |
 | [trimigi-flow](#component-trimigi-flow)                             | service     | GCloud SaaS                    | Turnonline  | &#10060;         |
 | [trimigi-agent](#component-trimigi-agent)                           | service     | AppEngine/Cloud run/On premise | Client      | &#9989;          | 
-| [trimigi-iam](#component-trimigi-iam)                               | service     | AppEngine/Cloud run/On premise | Client      | &#10060;         | 
+| [trimigi-iam](#component-trimigi-iam)                               | service     | GCloud SaaS                    | Client      | &#10060;         | 
 
 
 ### Component `trimigi-console`
