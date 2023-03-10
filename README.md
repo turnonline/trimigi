@@ -9,12 +9,11 @@ Trimigi documentation, architecture and API centralised repository
 | Component name                                                      | Type        | Deployment                     | Managed by  | Production ready |
 |---------------------------------------------------------------------| ----------- |--------------------------------| ----------- | ---------------- |
 | [trimigi-console](#component-trimigi-console)                       | UI          | GCloud SaaS                    | Turnonline  | &#9989;          |
-| [trimigi-job](#component-trimigi-job)                               | service     | GCloud SaaS                    | Turnonline  | &#10060;         | 
-| [trimigi-project-management](#component-trimigi-project-management) | service     | GCloud SaaS                    | Turnonline  | &#10060;         | 
-| [trimigi-batch-management](#component-trimigi-batch-management)     | service     | GCloud SaaS                    | Turnonline  | &#10060;         | 
+| [trimigi-job](#component-trimigi-job)                               | service     | GCloud SaaS                    | Turnonline  | &#9989;          | 
+| [trimigi-project](#component-trimigi-project)                       | service     | GCloud SaaS                    | Turnonline  | &#9989;          | 
+| [trimigi-batch](#component-trimigi-batch)                           | service     | GCloud SaaS                    | Turnonline  | &#9989;          | 
 | [trimigi-schedule](#component-trimigi-schedule)                     | service     | GCloud SaaS                    | Turnonline  | &#10060;         |
 | [trimigi-flow](#component-trimigi-flow)                             | service     | GCloud SaaS                    | Turnonline  | &#10060;         |
-| [trimigi-iam](#component-trimigi-iam)                               | service     | GCloud SaaS                    | Turnonline  | &#10060;         |
 | [trimigi-agent](#component-trimigi-agent)                           | service     | AppEngine/Cloud run/On premise | Client      | &#9989;          | 
 
 ### Component `trimigi-console`
@@ -28,12 +27,13 @@ Service for:
 * management of jobs created by migration batch
 * management of jobs created by import batch
 
-### Component `trimigi-project-management`
+### Component `trimigi-project`
 Service for:
 * management of projects
 * adding users to projects
+* user authorization
 
-### Component `trimigi-batch-management`
+### Component `trimigi-batch`
 Service for:
 * management of migration batches
 * management of import batches
@@ -55,7 +55,3 @@ Concrete implementation of agent
 * datastore
 * mongo
 * elasticsearch
-
-### Component `trimigi-iam`
-Service for:
-* authorization of Trimigi services
